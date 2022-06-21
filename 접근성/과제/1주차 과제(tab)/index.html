@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tab Access < 1주차 과제 < 최요한</title>
+	<script src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-ui.min.js"></script>
+	<script src="assets/js/common.js"></script>
+	<link rel="stylesheet" href="assets/plugins/jquery/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/layout.css">
+</head>
+<body>
+	
+	<h1>Tab List</h1>
+	<ul class="tablist" role="tablist"> <!-- 1 -->
+		<li id="tab1" class="tab" role="tab" title="현재 선택된 탭 메뉴입니다.">첫번째 클릭 요소입니다.</li> <!-- 2, 3, 4, 5 -->
+		<li id="tab2" class="tab" role="tab" title="">두번째 클릭 요소입니다.</li>
+		<li id="tab3" class="tab" role="tab" title="">세번째 클릭 요소입니다.</li>
+	</ul>
+	<div class="tabpanel" role="tabpanel" aria-labelledby="tab1"> <!-- 3, 4 ,5 -->
+		첫번째 영역 panel 첫번째 영역 panel 첫번째 영역 panel 첫번째 영역 panel
+	</div>
+	<div class="tabpanel" role="tabpanel" aria-labelledby="tab2">
+		두번째 영역 panel 두번째 영역 panel 두번째 영역 panel 두번째 영역 panel
+	</div>
+	<div class="tabpanel" role="tabpanel" aria-labelledby="tab3">
+		세번째 영역 panel 세번째 영역 panel 세번째 영역 panel 세번째 영역 panel
+	</div>
+
+
+	<!-- Study -->
+	<!--
+
+		1) ul.tablist에 role="tablist" 부여
+		= 탭 목록임을 인식하기 위해 사용
+
+		2) ul.tablist > li.tab에 role="tab" 부여
+		= 총 몇개의 tab 중 몇번째 tab을 탐색중인지 알려주기 위해 사용
+
+		3) .tabpanel 요소에 role="tabpanel" 부여 ==> script 처리
+		= 해당 panel에 접근 시, tab panel 영역임을 알려주기 위해 사용
+
+		4) tab 클릭 요소와 연관된 tab contents 영역
+			4-1) ul.tablist > li.tab에 aria-controls="tab-panel1 ~ 3" 부여 ,
+			4-2) .tabpanel에 id="tab-panel1 ~ 3" 부여
+			= 클릭요소 tab 메뉴와 panel 본문을 연결하기 위해 사용
+
+		5) 현재 tab panel과 연관된 tab 요소를 참조
+			5-1) .tabpanel 에 aria-labelledby="tab1 ~ 3" 부여
+			5-2) ul.tab_list > li.tab에 id="tab1 ~ 3 부여" ==> script 처리
+			= tabpanel의 label을 인식하여, 어떤 tab의 panel인지 알려주기 위해 사용
+
+	 -->
+
+</body>
+</html>

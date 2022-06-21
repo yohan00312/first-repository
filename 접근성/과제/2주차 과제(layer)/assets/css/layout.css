@@ -1,0 +1,116 @@
+body
+{
+	padding:20px;
+}
+h1
+{
+	font-size:30px;
+	letter-spacing:0;
+	margin-bottom:20px;
+}
+
+
+.all_wrap
+{
+	display:flex;
+	align-items:center;
+}
+.all_wrap .wrap_box > .contents_wrap > button
+{
+	cursor:pointer;
+	border:1px solid #e5e5e5;
+	border-radius:15px;
+	padding:15px;
+	transition:all .3s;
+	font-size:13px;
+}
+.all_wrap .wrap_box > .contents_wrap > button:hover
+{
+	background:#00a49d;
+	border:1px solid #00a49d;
+	color:#fff;
+}
+.all_wrap .wrap_box + .wrap_box > .contents_wrap > button
+{
+	margin-left:12px;
+}
+
+
+.layer_wrap
+{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	overflow-y:auto;
+}
+.layer_wrap .layer_box
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:auto;
+	max-height:95%;
+	transform:translateY(100%);
+	transition:all .3s;
+	padding:30px 20px;
+	background:#fff;
+}
+.layer_wrap .layer_box p
+{
+	margin-bottom:20px;
+	padding-right:50px;
+	line-height:1.4;
+}
+.layer_wrap .layer_box .layer_link_box
+{
+	display:flex;
+	align-items:center;
+}
+.layer_wrap .layer_box .layer_link_box li
+{
+	width:100%;
+}
+.layer_wrap .layer_box .layer_link_box li > *
+{
+	width:100%;
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	padding:15px 10px;
+}
+.layer_wrap .layer_box .layer_link_box li > *:focus
+{
+	color:#000;
+}
+.layer_wrap .layer_box .layer_link_box li + li
+{
+	margin-left:10px;
+}
+.layer_wrap .layer_box .close
+{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:20px;
+	cursor:pointer;
+	border:0;
+}
+.layer_wrap .layer_box .close:focus
+{
+	outline:2px solid #000;
+}
+.layer_wrap .layer_box .close img
+{
+	width:25px;
+}
+
+.l_open .layer_box
+{
+	transform:translateY(0);
+}

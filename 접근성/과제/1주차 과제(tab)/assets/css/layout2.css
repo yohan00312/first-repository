@@ -1,0 +1,27 @@
+body
+{
+	padding:20px;
+}
+h1
+{
+	font-size:30px;
+	letter-spacing:0;
+}
+
+/* Tab + List */
+.tablist
+{
+	position:relative;
+	margin-top:30px;
+}
+
+.tablist > ul
+{
+	display:flex;
+}
+.tablist > ul > li div
+{
+	position:absolute;
+	top:40px;
+	left:0;
+}

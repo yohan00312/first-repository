@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layer Popup < 2주차 과제 < 최요한</title>
+	<script src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-ui.min.js"></script>
+	<script src="assets/js/common.js"></script>
+	<link rel="stylesheet" href="assets/plugins/jquery/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/layout.css">
+</head>
+<body>
+
+	<h1>Layer</h1>
+	<div class="all_wrap">
+		
+		<!-- one wrap -->
+		<div class="wrap_box">
+			<!-- layer 클릭 요소 -->
+			<div class="contents_wrap">
+				<button type="button" class="c_btn" data-layer-open="test1">1번 레이어 클릭버튼</button> <!-- 1 -->
+			</div>
+
+			<!-- layer box 요소 -->
+			<div class="layer_wrap" data-layer="test1"> <!-- 2 -->
+				<div class="layer_box">
+					<p>
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+					</p>
+					<ul class="layer_link_box clearfix">
+						<li>
+							<a href="" class="ui-button ui-basic-button" role="button">링크 버튼 1-1</a>
+						</li>
+						<li>
+							<a href="" class="ui-button ui-basic-button type-primary" role="button">링크 버튼 1-2</a>
+						</li>
+					</ul>
+					<button class="close" data-role="layerClose"> <!-- 3 -->
+						<img src="assets/images/close.svg" alt="레이어 닫기">
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- // one wrap -->
+
+		<!-- one wrap -->
+		<div class="wrap_box">
+			<!-- layer 클릭 요소 -->
+			<div class="contents_wrap">
+				<button type="button" class="c_btn" data-layer-open="test2">2번 레이어 클릭버튼</button>
+			</div>
+
+			<!-- layer box 요소 -->
+			<div class="layer_wrap" data-layer="test2">
+				<div class="layer_box">
+					<p>
+						내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용11111111111
+					</p>
+					<ul class="layer_link_box clearfix">
+						<li>
+							<a href="" class="ui-button ui-basic-button" role="button">링크 버튼 2-1</a>
+						</li>
+						<li>
+							<a href="" class="ui-button ui-basic-button type-primary" role="button">링크 버튼 2-2</a>
+						</li>
+					</ul>
+					<button class="close" data-role="layerClose">
+						<img src="assets/images/close.svg" alt="레이어 닫기">
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- // one wrap -->
+
+
+
+		<!-- Study -->
+		<!--
+
+			1. 레이어 click 요소인 button에 data-layer-open="test1" 부여
+			= 레이어와 연관된 data값이 존재하여야 하므로 고유값인 임의의 test1 값 생성
+
+			2. layer_wrap. 즉 실질적인 layer box 에 data-layer="test1" 부여
+			= 레이어를 나타내기 위한 클릭 버튼과 연관된 data값이 필요하므로, 클릭 요소와 동일한 test1 값 생성
+
+			3. close 버튼에 data-role="layerClose" 값 부여
+			= 레이어를 닫는 기능의 버튼을 조금 더 명확하게 표현하기 위해 생성
+
+		-->
+
+	</div>
+</body>
+</html>
